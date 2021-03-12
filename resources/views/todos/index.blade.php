@@ -15,10 +15,10 @@
               {{$todo -> name}}
 
               @if(!$todo->completed)
-                <a href="todos/{{$todo->id}}/complete" class="btn btn-outline-warning btn-sm my-2 float-right">Complete</a>  
+                <a href="todos/{{$todo->id}}/complete" class="btn btn-outline-warning btn-sm mx-1 float-end">Complete</a>  
               @endif
               
-              <a href="todos/{{$todo->id}}" class="btn btn-outline-primary btn-sm float-right">View</a>     
+              <a href="todos/{{$todo->id}}" class="btn btn-outline-primary btn-sm float-end">View</a>     
             </li>
           @endforeach
         </ul>
